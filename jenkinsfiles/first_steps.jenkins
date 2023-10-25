@@ -12,12 +12,14 @@ pipeline {
         stage("First step") {
             steps {
                 sh 'echo \'First step\''
-                sh 'echo \'==================\'' 
+                sh 'sleep 5'
+                sh 'echo \'==================\''
             }
         }
         stage("Second step") {
             steps {                
                 sh 'echo \'Second step\''
+                sh 'sleep 5'
                 sh 'echo \'Hostname is \' $HOSTNAME'
             }
         }
