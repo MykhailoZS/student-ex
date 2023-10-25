@@ -13,7 +13,7 @@ pipeline {
             steps {
                 sh 'echo \'First step\''
                 sh 'sleep 5'
-                sh 'echo \'==================\''
+                sh 'echo \'Hello student!\''
             }
         }
         stage("Second step") {
