@@ -13,14 +13,14 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                echo "First step"
-                echo "==================" 
+                sh 'echo \'First step\''
+                sh 'echo \'==================\'' 
             }
         }
         stage("Second step") {
             steps {                
-                echo "Second step"
-                echo "Hostname is " $HOSTNAME
+                sh 'echo \'Second step\''
+                sh 'echo \'Hostname is \' $HOSTNAME'
             }
         }
     }
